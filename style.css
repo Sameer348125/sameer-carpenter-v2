@@ -309,3 +309,12 @@ margin-bottom:20px;
     object-fit:cover;
     margin-top:20px;
 }
+.hero-image img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #d4a017;
+    display:block;
+    margin:auto;
+}
