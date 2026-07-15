@@ -410,3 +410,8 @@ html{
     height:300px;
     object-fit:cover;
 }
+.hero-text h1{
+    color:#ffffff;
+    font-size:42px;
+    text-shadow:none;
+}
