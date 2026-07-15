@@ -341,3 +341,36 @@ margin-bottom:20px;
 .navbar a:hover{
     color:#d4a017;
 }
+.hero-premium{
+    background:linear-gradient(135deg,#0d1b2a,#1b263b);
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 30px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+.hero-text h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:20px;
+    color:#ddd;
+}
+
+.hero-image img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #d4a017;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
