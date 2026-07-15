@@ -374,3 +374,6 @@ margin-bottom:20px;
     border:5px solid #d4a017;
     box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
+html{
+    scroll-behavior:smooth;
+}
