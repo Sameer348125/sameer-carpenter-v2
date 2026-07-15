@@ -377,3 +377,36 @@ margin-bottom:20px;
 html{
     scroll-behavior:smooth;
 }
+.hero-premium{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.hero-text{
+    flex:1;
+    min-width:280px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #d4a017;
+    display:block;
+    margin:auto;
+}
+
+.slider img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
