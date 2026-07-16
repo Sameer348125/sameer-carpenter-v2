@@ -435,22 +435,3 @@ html{
     font-size:36px;
     margin:0;
 }
-
-.counter-box p{
-    margin-top:10px;
-    font-size:16px;
-}.hours{
-    padding:40px 20px10pxss  text-align:center;
-    background:#f8f8f20pxurs-boxh:400px;
-    margin:auto;
-    background:#fff;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    border:2px solid #d4a017;
-}
-
-.hours-box p{
-    margin:10px 0;
-    font-size:18pxmax-widtht-weight:600;
-}
