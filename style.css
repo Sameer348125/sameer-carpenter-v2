@@ -414,4 +414,30 @@ html{
     color:#ffffff;
     font-size:42px;
     text-shadow:none;
+}.counter{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    padding:40px 20px;
+    background:#111;
+}
+
+.counter-box{
+    background:#1c1c1c;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    border-radius:15px;
+    border:2px solid #d4a017;
+}
+
+.counter-box h2{
+    color:#d4a017;
+    font-size:36px;
+    margin:0;
+}
+
+.counter-box p{
+    margin-top:10px;
+    font-size:16px;
 }
