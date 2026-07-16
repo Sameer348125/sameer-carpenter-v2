@@ -44,4 +44,24 @@ if (lightbox) {
       lightbox.style.display = "none";
     }
   });
-}
+}document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
+
+    let text =
+`Hello Sameer Carpenter,
+
+Name: ${name}
+Phone: ${phone}
+
+Requirement:
+${message}`;
+
+    let whatsappURL =
+`https://wa.me/919756031755?text=${encodeURIComponent(text)}`;
+
+    window.open(whatsappURL, "_blank");
+});
