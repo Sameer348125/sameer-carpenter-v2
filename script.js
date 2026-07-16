@@ -64,4 +64,6 @@ ${message}`;
 `https://wa.me/919756031755?text=${encodeURIComponent(text)}`;
 
     window.open(whatsappURL, "_blank");
+});window.addEventListener("load", function(){
+    document.getElementById("loader").style.display = "none";
 });
