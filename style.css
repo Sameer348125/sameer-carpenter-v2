@@ -91,14 +91,19 @@ margin-bottom:25px;
 flex:1;
 text-align:center;
 }
-
 .hero-image img{
-width:260px;
-height:260px;
-border-radius:50%;
-object-fit:cover;
-border:6px solid #ffd700;
-box-shadow:0 10px 30px rgba(0,0,0,.5);
+    width:180px;
+    height:180px;
+    margin-top:20px;
+}
+
+.btn{
+    display:block;
+    width:220px;
+    margin:10px auto;
+}
+}
+.hero
 }
 
 /* ===== BUTTON ===== */
