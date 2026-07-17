@@ -513,4 +513,35 @@ footer p{
     font-size:20px;
     color:#f5f5f5;
     margin:20px 0;
+}.hero-premium{
+    background: linear-gradient(135deg,#1a1a1a,#333);
+    color:#fff;
+    padding:60px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    border-radius:20px;
+    margin:20px;
+}
+
+.hero-text h1{
+    font-size:42px;
+    color:#d4a017;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:18px;
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.hero-image img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    border:5px solid #d4a017;
+    object-fit:cover;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
 }
