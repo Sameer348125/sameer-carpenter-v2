@@ -86,3 +86,14 @@ let message =
 window.open("https://wa.me/919756031755?text=" + message,"_blank");
 
 });
+// ===== Loader =====
+
+window.addEventListener("load", function () {
+
+    setTimeout(function () {
+
+        document.getElementById("loader").style.display = "none";
+
+    }, 1500);
+
+});
