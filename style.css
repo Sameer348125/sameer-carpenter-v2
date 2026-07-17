@@ -554,4 +554,11 @@ nav{
 
 }
 
+}.gallery-box img{
+    cursor:pointer;
+    transition:0.4s ease;
+}
+
+.gallery-box img:hover{
+    transform:scale(1.1);
 }
