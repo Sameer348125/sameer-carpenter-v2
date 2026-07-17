@@ -144,16 +144,23 @@ margin-bottom:35px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
+}.card{
+    background:#ffffff;
+    color:#111111;
+    padding:25px;
+    border-radius:15px;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
 }
 
-.card{
-background:#fff;
-padding:25px;
-border-radius:15px;
-font-size:20px;
-font-weight:bold;
-box-shadow:0 5px 20px rgba(0,0,0,.2);
-transition:.3s;
+.card:hover{
+    background:#d4a017;
+    color:#ffffff;
+    transform:translateY(-5px);
+
 }
 
 .card:hover{
