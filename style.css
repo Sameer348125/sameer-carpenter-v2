@@ -299,4 +299,259 @@ nav a:hover{
 
     transform:scale(1.08);
 
+}/* ===== ABOUT ===== */
+
+.about{
+
+    padding:60px 8%;
+    text-align:center;
+    background:#f8f8f8;
+
+}
+
+
+.about h2{
+
+    color:#d4a017;
+    font-size:36px;
+    margin-bottom:20px;
+
+}
+
+
+.about p{
+
+    max-width:800px;
+    margin:auto;
+
+    font-size:18px;
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+
+/* ===== CONTACT ===== */
+
+.contact{
+
+    padding:60px 8%;
+    background:white;
+    text-align:center;
+
+}
+
+
+.contact h2{
+
+    color:#d4a017;
+    font-size:36px;
+    margin-bottom:25px;
+
+}
+
+
+.contact form{
+
+    max-width:600px;
+    margin:auto;
+
+}
+
+
+.contact input,
+.contact textarea{
+
+    width:100%;
+    padding:15px;
+
+    margin:10px 0;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+
+.contact textarea{
+
+    height:120px;
+
+}
+
+
+.contact button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#d4a017;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+
+
+/* ===== LOCATION ===== */
+
+.location{
+
+    padding:50px 8%;
+
+    text-align:center;
+
+}
+
+
+.location h2{
+
+    color:#d4a017;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* ===== FOOTER ===== */
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    border-top:4px solid #d4a017;
+
+}
+
+
+footer h2{
+
+    color:#ffd700;
+
+}
+
+
+
+/* ===== FLOATING BUTTONS ===== */
+
+.floating-buttons{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+.call-float,
+.whatsapp-float{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:28px;
+
+}
+
+
+.call-float{
+
+    background:#007bff;
+
+}
+
+
+.whatsapp-float{
+
+    background:#25D366;
+
+}
+
+
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+.hero{
+
+    text-align:center;
+
+}
+
+
+.hero-text h1{
+
+    font-size:32px;
+
+}
+
+
+.hero-image img{
+
+    width:150px;
+
+    height:150px;
+
+}
+
 }
