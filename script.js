@@ -86,6 +86,7 @@ let message =
 window.open("https://wa.me/919756031755?text=" + message,"_blank");
 
 });
+
 // ===== Loader =====
 
 window.addEventListener("load", function () {
@@ -96,4 +97,5 @@ window.addEventListener("load", function () {
 
     }, 1500);
 
+});
 });
