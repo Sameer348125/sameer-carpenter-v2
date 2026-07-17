@@ -582,4 +582,11 @@ nav{
 
 .btn:hover{
     transform:scale(1.05);
+}.gallery-box img{
+    border:3px solid transparent;
+}
+
+.gallery-box img:hover{
+    border-color:#d4a017;
+    box-shadow:0 10px 25px rgba(0,0,0,0.35);
 }
