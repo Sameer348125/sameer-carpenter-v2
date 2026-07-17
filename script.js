@@ -25,4 +25,12 @@ slide.src = images[index];
 
 },3000);
 
-}
+}document.querySelectorAll(".gallery-box img").forEach(function(img){
+
+img.onclick = function(){
+
+window.open(this.src,"_blank");
+
+};
+
+});
