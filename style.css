@@ -383,7 +383,8 @@ html{
     align-items:center;
     padding:40px 20px;
 
-    background:url("image/banner.webp") center center;
+    background:url("image/banner.webp") center 
+    center;
     background-size:100% 180px;
     background-repeat:no-repeat;
 
