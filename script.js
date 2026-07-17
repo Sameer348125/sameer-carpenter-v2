@@ -65,4 +65,24 @@ lightbox.addEventListener("click", function(e){
 
     }
 
+});// WhatsApp Form
+
+const form = document.querySelector(".contact form");
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let name = form.querySelector('input[type="text"]').value;
+let mobile = form.querySelector('input[type="tel"]').value;
+let work = form.querySelector("textarea").value;
+
+let message =
+"Hello Sameer Carpenter%0A%0A" +
+"Name: " + name + "%0A" +
+"Mobile: " + mobile + "%0A" +
+"Work: " + work;
+
+window.open("https://wa.me/919756031755?text=" + message,"_blank");
+
 });
