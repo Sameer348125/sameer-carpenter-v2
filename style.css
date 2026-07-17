@@ -114,3 +114,70 @@ header p{
 .btn:hover{
     background:#b8860b;
 }
+/* ===== Gallery ===== */
+
+.gallery{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:34px;
+    color:#d4a017;
+    margin-bottom:25px;
+}
+
+.gallery-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-box img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.4s;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.gallery-box img:hover{
+    transform:scale(1.05);
+}
+
+/* ===== Services ===== */
+
+.services{
+    background:#111;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.services h2{
+    color:#ffd700;
+    font-size:34px;
+    margin-bottom:25px;
+}
+
+.service-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.service{
+    background:#fff;
+    color:#111;
+    padding:25px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.service:hover{
+    background:#ffd700;
+    transform:translateY(-5px);
+}
