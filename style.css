@@ -691,4 +691,38 @@ transform:rotate(360deg);
 
 .review-box h4{
     color:#d4a017;
+}/* ===== COUNTER ===== */
+
+.counter{
+    padding:60px 8%;
+    background:#d4a017;
+    text-align:center;
+}
+
+.counter h2{
+    color:#fff;
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+.counter-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.counter-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+}
+
+.counter-card h3{
+    font-size:40px;
+    color:#d4a017;
+}
+
+.counter-card p{
+    margin-top:10px;
+    font-weight:bold;
 }
