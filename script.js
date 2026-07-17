@@ -97,5 +97,13 @@ window.addEventListener("load", function () {
 
     }, 1500);
 
-});
+});window.onload = function () {
+
+    const loader = document.getElementById("loader");
+
+    if(loader){
+        loader.style.display = "none";
+    }
+
+};
 
