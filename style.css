@@ -181,3 +181,114 @@ header p{
     background:#ffd700;
     transform:translateY(-5px);
 }
+/* ===== Reviews ===== */
+
+.reviews{
+    padding:50px 20px;
+    background:#f8f8f8;
+    text-align:center;
+}
+
+.reviews h2{
+    color:#d4a017;
+    font-size:34px;
+    margin-bottom:25px;
+}
+
+.review-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.review{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.review h3{
+    color:#d4a017;
+    margin-bottom:10px;
+}
+
+/* ===== Contact ===== */
+
+.contact{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    color:#d4a017;
+    margin-bottom:20px;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    max-width:500px;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.contact button{
+    background:#d4a017;
+    color:#fff;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.contact button:hover{
+    background:#b8860b;
+}
+
+/* ===== Footer ===== */
+
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:30px 20px;
+    border-top:4px solid #d4a017;
+}
+
+footer h2{
+    color:#d4a017;
+    margin-bottom:10px;
+}
+
+/* ===== Mobile ===== */
+
+@media(max-width:768px){
+
+.hero-premium{
+    text-align:center;
+}
+
+.hero-image img{
+    width:170px;
+    height:170px;
+    margin-top:20px;
+}
+
+.hero-text h1{
+    font-size:32px;
+}
+
+.hero-text p{
+    font-size:17px;
+}
+
+.btn{
+    display:block;
+    margin:10px auto;
+    width:220px;
+}
+}
