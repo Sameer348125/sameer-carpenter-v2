@@ -383,30 +383,12 @@ html{
     align-items:center;
     padding:40px 20px;
 
-    background:url("image/banner.webp");
-    background-size: 80% auto;
-min-height: 180px;
-    background-position:center;
+    background:url("image/banner.webp") center center;
+    background-size:100% 180px;
     background-repeat:no-repeat;
 
+    height:180px;
     position:relative;
-}
-
-.hero-premium::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.55);
-}
-
-.hero-text,
-.hero-image{
-    position:relative;
-    z-index:2;
-}
 }
 
 .hero-text{
