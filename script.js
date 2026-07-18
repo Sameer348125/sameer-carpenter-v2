@@ -8,15 +8,6 @@ const images = [
     "image/tv-panel-3.jpg",
     "image/tv-panel-4.jpg"
 ];
-
-let index = 0;
-const slide = document.getElementById("slide");
-
-if (slide) {
-    setInterval(function () {
-        index = (index + 1) % images.length;
-        slide.src = images[index];
-    }, 3000);
 }
 
 const slide = document.getElementById("slide");
