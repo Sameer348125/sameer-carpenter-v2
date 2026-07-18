@@ -1,12 +1,12 @@
 // ===== AUTO SLIDER =====
 
 const images = [
-    "image/photo1.jpg",
-    "image/photo2.jpg",
-    "image/photo3.jpg",
-    "image/photo4.jpg",
-    "image/photo5.jpg",
-    "image/photo6.jpg"
+    "image/hero-bg.jpg",
+    "image/tv-panel-1.jpg",
+    "image/tv-panel-2.jpg",
+    "image/tv-panel-3.jpg",
+    "image/tv-panel-4.jpg"
+];
 ];
 
 let index = 0;
