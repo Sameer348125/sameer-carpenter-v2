@@ -1,4 +1,5 @@
 
+
 // ===== AUTO SLIDER =====
 
 const images = [
@@ -8,7 +9,8 @@ const images = [
     "image/tv-panel-3.jpg",
     "image/tv-panel-4.jpg"
 ];
-}
+
+let index = 0;
 
 const slide = document.getElementById("slide");
 
