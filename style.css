@@ -498,3 +498,245 @@ LOCATION
 .location iframe{
     border-radius:15px;
 }
+/* =========================
+ABOUT
+========================= */
+
+.about{
+    padding:70px 8%;
+    background:#fff;
+    text-align:center;
+}
+
+.about h2{
+    color:#d4a017;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* =========================
+WHY CHOOSE US
+========================= */
+
+.why-us{
+    padding:70px 8%;
+    background:#f5f5f5;
+    text-align:center;
+}
+
+.why-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
+.why-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* =========================
+COUNTER
+========================= */
+
+.counter{
+    padding:70px 8%;
+    background:#d4a017;
+    text-align:center;
+}
+
+.counter h2{
+    color:#fff;
+    margin-bottom:30px;
+}
+
+.counter-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.counter-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+}
+
+.counter-card h3{
+    font-size:40px;
+    color:#d4a017;
+}
+
+/* =========================
+REVIEWS
+========================= */
+
+.reviews{
+    padding:70px 8%;
+    background:#fff;
+}
+
+.review-box{
+    background:#f8f8f8;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+/* =========================
+CONTACT
+========================= */
+
+.contact{
+    padding:70px 8%;
+    background:#f5f5f5;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input,
+.contact textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+.contact button{
+    padding:15px;
+    background:#d4a017;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* =========================
+LOCATION
+========================= */
+
+.location{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.location iframe{
+    border-radius:15px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+}
+
+footer h2{
+    color:#d4a017;
+}
+
+/* =========================
+FLOATING BUTTONS
+========================= */
+
+.call-float,
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-decoration:none;
+    font-size:28px;
+    z-index:999;
+}
+
+.call-float{
+    bottom:90px;
+    background:#d4a017;
+}
+
+.whatsapp-float{
+    bottom:20px;
+    background:#25D366;
+}
+
+/* =========================
+LOADER
+========================= */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.loader-circle{
+    width:70px;
+    height:70px;
+    border:8px solid #ddd;
+    border-top:8px solid #d4a017;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.hero-content{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-photo img{
+width:250px;
+height:250px;
+}
+
+.hero-text h1{
+font-size:35px;
+}
+
+.main-slider img{
+height:250px;
+}
+
+}
