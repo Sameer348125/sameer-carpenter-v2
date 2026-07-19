@@ -1,1 +1,186 @@
+/* =========================
+   RESET
+========================= */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f8f8;
+    color:#222;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header{
+    width:100%;
+    background:#111;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h1{
+    color:#d4a017;
+    font-size:30px;
+}
+
+.logo p{
+    font-size:14px;
+    color:#ddd;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d4a017;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+
+    min-height:650px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("image/banner.webp");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:60px 8%;
+
+}
+
+.hero-content{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{
+
+    font-size:55px;
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+    color:#fff;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.btn{
+
+    background:#d4a017;
+
+    color:#fff;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.btn:hover{
+
+    background:#000;
+
+}
+
+.whatsapp{
+
+    background:#25D366;
+
+}
+
+/* Hero Photo */
+
+.hero-photo{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.hero-photo img{
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:8px solid #d4a017;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.5);
+
+}
