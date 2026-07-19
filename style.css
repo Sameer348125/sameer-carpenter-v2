@@ -184,3 +184,132 @@ HERO
     box-shadow:0 10px 35px rgba(0,0,0,.5);
 
 }
+/* =========================
+MAIN SLIDER
+========================= */
+
+.main-slider{
+    width:100%;
+    padding:40px 8%;
+    background:#fff;
+    text-align:center;
+}
+
+.main-slider img{
+    width:100%;
+    max-width:1000px;
+    height:500px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+/* =========================
+SERVICES
+========================= */
+
+.services{
+    padding:70px 8%;
+    background:#f8f8f8;
+    text-align:center;
+}
+
+.services h2{
+    font-size:40px;
+    margin-bottom:40px;
+    color:#d4a017;
+}
+
+.service-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:18px;
+    color:#222;
+}
+
+/* =========================
+GALLERY
+========================= */
+
+.gallery{
+    padding:70px 8%;
+    background:#fff;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:40px;
+    color:#d4a017;
+    margin-bottom:40px;
+}
+
+.gallery-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-box img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gallery-box img:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+LIGHTBOX
+========================= */
+
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.9);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+}
+
+#close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:#fff;
+    font-size:45px;
+    cursor:pointer;
+}
