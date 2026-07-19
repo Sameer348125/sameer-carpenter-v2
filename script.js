@@ -117,3 +117,66 @@ if (form) {
     });
 
 }
+// =========================
+// SERVICE CARD CLICK
+// =========================
+
+document.querySelectorAll(".card").forEach(function(card){
+
+    card.addEventListener("click",function(){
+
+        const title=this.querySelector("h3").innerText;
+
+        alert(title + " Gallery will be available here.");
+
+    });
+
+});
+
+// =========================
+// IMAGE HOVER EFFECT
+// =========================
+
+document.querySelectorAll(".gallery-box img").forEach(function(img){
+
+    img.addEventListener("mouseover",function(){
+
+        this.style.transform="scale(1.05)";
+
+    });
+
+    img.addEventListener("mouseout",function(){
+
+        this.style.transform="scale(1)";
+
+    });
+
+});
+
+// =========================
+// SMOOTH PAGE ANIMATION
+// =========================
+
+const observer=new IntersectionObserver(function(entries){
+
+    entries.forEach(function(entry){
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+});
+
+document.querySelectorAll("section").forEach(function(sec){
+
+    observer.observe(sec);
+
+});
+
+// =========================
+// END
+// =========================
