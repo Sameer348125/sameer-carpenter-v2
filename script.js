@@ -217,24 +217,6 @@ const nextBtn = document.getElementById("nextBtn");
 let currentImages = [];
 let currentIndex = 0;
 
-document.querySelectorAll(".card").forEach(card => {
-
-    card.addEventListener("click", () => {
-
-        const title = card.querySelector("h3").innerText;
-
-        if (!galleryData[title]) return;
-
-        currentImages = galleryData[title];
-        currentIndex = 0;
-
-        popup.style.display = "flex";
-        popupImg.src = currentImages[currentIndex];
-
-    });
-
-});
-
 nextBtn.onclick = function(){
 
     currentIndex++;
