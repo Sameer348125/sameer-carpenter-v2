@@ -178,3 +178,31 @@ document.querySelectorAll("section").forEach(function(sec){
     observer.observe(sec);
 
 });
+// =========================
+// GALLERY IMAGE ZOOM
+// =========================
+
+document.querySelectorAll(".gallery-box img").forEach(function(img){
+
+    img.addEventListener("click",function(){
+
+        lightbox.style.display = "flex";
+        lightboxImg.src = this.src;
+
+    });
+
+});
+
+closeBtn.onclick = function(){
+
+    lightbox.style.display = "none";
+
+};
+
+lightbox.onclick = function(e){
+
+    if(e.target === lightbox){
+        lightbox.style.display = "none";
+    }
+
+};
