@@ -137,21 +137,47 @@ document.querySelectorAll(".card").forEach(function(card){
 // IMAGE HOVER EFFECT
 // =========================
 
-document.querySelectorAll(".gallery-box img").forEach(function(img){
+const galleryData = {
+    "TV Panel": [
+        "image/tv-panel-1.jpg",
+        "image/tv-panel-2.jpg",
+        "image/tv-panel-3.jpg",
+        "image/tv-panel-4.jpg"
+    ],
 
-    img.addEventListener("mouseover",function(){
+    "Modular Kitchen": [
+        "image/download.webp",
+        "image/download (1).webp"
+    ],
 
-        this.style.transform="scale(1.05)";
+    "Wardrobe": [
+        "image/images (12).jpeg",
+        "image/images (19).jpeg"
+    ],
 
-    });
+    "Wooden Door": [
+        "image/images (10).jpeg",
+        "image/images (11).jpeg"
+    ],
 
-    img.addEventListener("mouseout",function(){
+    "Wooden Furniture": [
+        "image/modern-furniture-1.jpg",
+        "image/modern-furniture-2.jpg"
+    ]
+};
 
-        this.style.transform="scale(1)";
+document.querySelectorAll(".card").forEach(function(card){
+
+    card.addEventListener("click",function(){
+
+        const title = this.querySelector("h3").innerText;
+
+        console.log(galleryData[title]);
 
     });
 
 });
+
 
 // =========================
 // SMOOTH PAGE ANIMATION
