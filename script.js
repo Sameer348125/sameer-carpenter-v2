@@ -114,24 +114,7 @@ if (form) {
             "_blank"
         );
 
-    });
-
-}
-// =========================
-// SERVICE CARD CLICK
-// =========================
-
-document.querySelectorAll(".card").forEach(function(card){
-
-    card.addEventListener("click",function(){
-
-        const title=this.querySelector("h3").innerText;
-
-        alert(title + " Gallery will be available here.");
-
-    });
-
-});
+);
 
 // =========================
 // IMAGE HOVER EFFECT
