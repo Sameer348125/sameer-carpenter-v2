@@ -206,3 +206,69 @@ document.querySelectorAll("section").forEach(function(sec){
 // =========================
 // END
 // =========================
+// ===== Gallery Popup =====
+
+const popup = document.getElementById("galleryPopup");
+const popupImg = document.getElementById("galleryImage");
+const closeGallery = document.getElementById("closeGallery");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let currentImages = [];
+let currentIndex = 0;
+
+document.querySelectorAll(".card").forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        const title = card.querySelector("h3").innerText;
+
+        if (!galleryData[title]) return;
+
+        currentImages = galleryData[title];
+        currentIndex = 0;
+
+        popup.style.display = "flex";
+        popupImg.src = currentImages[currentIndex];
+
+    });
+
+});
+
+nextBtn.onclick = function(){
+
+    currentIndex++;
+
+    if(currentIndex >= currentImages.length){
+        currentIndex = 0;
+    }
+
+    popupImg.src = currentImages[currentIndex];
+
+}
+
+prevBtn.onclick = function(){
+
+    currentIndex--;
+
+    if(currentIndex < 0){
+        currentIndex = currentImages.length - 1;
+    }
+
+    popupImg.src = currentImages[currentIndex];
+
+}
+
+closeGallery.onclick = function(){
+
+    popup.style.display = "none";
+
+}
+
+popup.onclick = function(e){
+
+    if(e.target === popup){
+        popup.style.display = "none";
+    }
+
+}
