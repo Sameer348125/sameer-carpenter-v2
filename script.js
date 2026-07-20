@@ -89,3 +89,92 @@ const nextBtn = document.getElementById("nextBtn");
 
 let currentImages = [];
 let currentIndex = 0;
+// =========================
+// SERVICE CARD CLICK
+// =========================
+
+document.querySelectorAll(".card").forEach(function(card){
+
+    card.addEventListener("click",function(){
+
+        const title = this.querySelector("h3").innerText;
+
+        if(!galleryData[title]) return;
+
+        currentImages = galleryData[title];
+        currentIndex = 0;
+
+        popup.style.display = "flex";
+        popupImg.src = currentImages[currentIndex];
+
+    });
+
+});
+
+// =========================
+// NEXT / PREVIOUS
+// =========================
+
+nextBtn.onclick = function(){
+
+    currentIndex++;
+
+    if(currentIndex >= currentImages.length){
+        currentIndex = 0;
+    }
+
+    popupImg.src = currentImages[currentIndex];
+
+};
+
+prevBtn.onclick = function(){
+
+    currentIndex--;
+
+    if(currentIndex < 0){
+        currentIndex = currentImages.length - 1;
+    }
+
+    popupImg.src = currentImages[currentIndex];
+
+};
+
+// =========================
+// CLOSE POPUP
+// =========================
+
+closeGallery.onclick = function(){
+
+    popup.style.display = "none";
+
+};
+
+popup.onclick = function(e){
+
+    if(e.target === popup){
+        popup.style.display = "none";
+    }
+
+};
+
+// =========================
+// SMOOTH ANIMATION
+// =========================
+
+const observer = new IntersectionObserver(function(entries){
+
+    entries.forEach(function(entry){
+
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+
+    });
+
+});
+
+document.querySelectorAll("section").forEach(function(sec){
+
+    observer.observe(sec);
+
+});
