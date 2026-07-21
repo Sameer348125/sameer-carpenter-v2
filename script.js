@@ -177,7 +177,6 @@ document.querySelectorAll("section").forEach(function(sec){
     observer.observe(sec);
 
 });
-// =========================
 // GALLERY IMAGE ZOOM
 // =========================
 
