@@ -177,30 +177,70 @@ document.querySelectorAll("section").forEach(function(sec){
     observer.observe(sec);
 
 });
-// GALLERY IMAGE ZOOM
-// =========================
+// ===========================
+// SCROLL GALLERY
+// ===========================
 
-document.querySelectorAll(".gallery-box img").forEach(function(img){
+const scrollGallery = document.getElementById("scrollGallery");
+const scrollContainer = document.getElementById("scrollContainer");
+const closeScroll = document.getElementById("closeScroll");
 
-    img.addEventListener("click",function(){
+const galleryData = {
 
-        lightbox.style.display = "flex";
-        lightboxImg.src = this.src;
+  "TV Panel":[
+    "image/tv-panel-1.jpg",
+    "image/tv-panel-2.jpg",
+    "image/tv-panel-3.jpg",
+    "image/tv-panel-4.jpg"
+  ],
+
+  "Modular Kitchen":[
+    "image/download.webp",
+    "image/download (1).webp"
+  ],
+
+  "Wardrobe":[
+    "image/images (12).jpeg",
+    "image/images (19).jpeg"
+  ],
+
+  "Wooden Door":[
+    "image/images (10).jpeg",
+    "image/images (11).jpeg"
+  ],
+
+  "Wooden Furniture":[
+    "image/modern-furniture-1.jpg",
+    "image/modern-furniture-2.jpg"
+  ]
+
+};
+
+document.querySelectorAll(".card").forEach(function(card){
+
+    card.addEventListener("click",function(){
+
+        const title = this.querySelector("h3").innerText;
+
+        if(!galleryData[title]) return;
+
+        scrollContainer.innerHTML = "";
+
+        galleryData[title].forEach(function(img){
+
+            scrollContainer.innerHTML += `<img src="${img}" alt="">`;
+
+        });
+
+        scrollGallery.style.display = "block";
 
     });
 
 });
 
-closeBtn.onclick = function(){
+closeScroll.onclick = function(){
 
-    lightbox.style.display = "none";
-
-};
-
-lightbox.onclick = function(e){
-
-    if(e.target === lightbox){
-        lightbox.style.display = "none";
-    }
+    scrollGallery.style.display = "none";
+    scrollContainer.innerHTML = "";
 
 };
