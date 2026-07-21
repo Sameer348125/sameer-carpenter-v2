@@ -97,3 +97,53 @@ const galleryData = {
     ]
 
 };
+// ==============================
+// SERVICE CARD CLICK
+// ==============================
+
+document.querySelectorAll(".card").forEach(function(card){
+
+    card.addEventListener("click",function(){
+
+        const title = this.querySelector("h3").innerText;
+
+        if(!galleryData[title]) return;
+
+        scrollContainer.innerHTML = "";
+
+        galleryData[title].forEach(function(img){
+
+            const image = document.createElement("img");
+            image.src = img;
+            image.alt = title;
+            scrollContainer.appendChild(image);
+
+        });
+
+        scrollGallery.style.display = "block";
+
+    });
+
+});
+
+// ==============================
+// CLOSE GALLERY
+// ==============================
+
+closeScroll.addEventListener("click",function(){
+
+    scrollGallery.style.display = "none";
+    scrollContainer.innerHTML = "";
+
+});
+
+scrollGallery.addEventListener("click",function(e){
+
+    if(e.target === scrollGallery){
+
+        scrollGallery.style.display = "none";
+        scrollContainer.innerHTML = "";
+
+    }
+
+});
