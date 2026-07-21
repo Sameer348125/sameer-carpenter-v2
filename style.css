@@ -884,3 +884,17 @@ font-size:35px;
     display:block;
     margin:auto;
 }
+.map-box{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+.map-box iframe{
+    width:100%;
+    height:350px;
+    border:0;
+}
