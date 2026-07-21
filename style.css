@@ -865,4 +865,22 @@ font-size:35px;
 
 }
 
+}/* =========================
+   LOCATION MAP
+========================= */
+
+.location{
+    width:100%;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.location iframe{
+    width:100%;
+    max-width:1000px;
+    height:450px;
+    border:none;
+    border-radius:20px;
+    display:block;
+    margin:auto;
 }
