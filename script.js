@@ -92,7 +92,6 @@ let currentIndex = 0;
 // =========================
 // SERVICE CARD CLICK
 // =========================
-
 document.querySelectorAll(".card").forEach(function(card){
 
     card.addEventListener("click",function(){
