@@ -55,4 +55,45 @@ if (heroSlide) {
 
     }, 3000);
 
-}
+}// ==============================
+// SCROLL GALLERY
+// ==============================
+
+const scrollGallery = document.getElementById("scrollGallery");
+const scrollContainer = document.getElementById("scrollContainer");
+const closeScroll = document.getElementById("closeScroll");
+
+// ==============================
+// GALLERY DATA
+// ==============================
+
+const galleryData = {
+
+    "TV Panel":[
+        "image/tv-panel-1.jpg",
+        "image/tv-panel-2.jpg",
+        "image/tv-panel-3.jpg",
+        "image/tv-panel-4.jpg"
+    ],
+
+    "Modular Kitchen":[
+        "image/download.webp",
+        "image/download (1).webp"
+    ],
+
+    "Wardrobe":[
+        "image/images (12).jpeg",
+        "image/images (19).jpeg"
+    ],
+
+    "Wooden Door":[
+        "image/images (10).jpeg",
+        "image/images (11).jpeg"
+    ],
+
+    "Wooden Furniture":[
+        "image/modern-furniture-1.jpg",
+        "image/modern-furniture-2.jpg"
+    ]
+
+};
