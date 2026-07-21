@@ -147,3 +147,57 @@ scrollGallery.addEventListener("click",function(e){
     }
 
 });
+// ==============================
+// WHATSAPP FORM
+// ==============================
+
+const form = document.querySelector(".contact form");
+
+if(form){
+
+    form.addEventListener("submit",function(e){
+
+        e.preventDefault();
+
+        const name = form.querySelector('input[type="text"]').value;
+        const mobile = form.querySelector('input[type="tel"]').value;
+        const work = form.querySelector("textarea").value;
+
+        const message =
+        "Hello Sameer Carpenter%0A%0A" +
+        "Name : " + name + "%0A" +
+        "Mobile : " + mobile + "%0A" +
+        "Requirement : " + work;
+
+        window.open(
+        "https://wa.me/919756031755?text=" + message,
+        "_blank"
+        );
+
+    });
+
+}
+
+// ==============================
+// SMOOTH ANIMATION
+// ==============================
+
+const observer = new IntersectionObserver(function(entries){
+
+    entries.forEach(function(entry){
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+});
+
+document.querySelectorAll("section").forEach(function(sec){
+
+    observer.observe(sec);
+
+});
