@@ -61,24 +61,19 @@ nav a:hover{
 /* =========================
 HERO
 ========================= */
-
 .hero{
-
-    min-height:650px;
+    min-height:100vh;
 
     background:
-    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("image/banner.webp");
-
-    background-size:cover;
-    background-position:center;
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("image/banner.webp") center center/cover no-repeat;
 
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:space-between;
 
-    padding:60px 8%;
-
+    padding:100px 8%;
+}
 }
 
 .hero-content{
