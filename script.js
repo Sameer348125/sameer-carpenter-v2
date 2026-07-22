@@ -287,10 +287,4 @@ behavior:"smooth"
 },3000);
 
 }
-// ===== TV PANEL SCROLL GALLERY =====
-
-const cards = document.querySelectorAll(".card");
-const scrollGallery = document.getElementById("scrollGallery");
-const scrollContainer = document.getElementById("scrollContainer");
-const closeScroll = document.getElementById("closeScroll");
 
