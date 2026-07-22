@@ -303,31 +303,3 @@ tv:[
 "image/tv5.jpg"
 ]
 };
-
-cards.forEach(card=>{
-
-card.addEventListener("click",()=>{
-
-const type = card.dataset.gallery;
-
-if(!galleryImages[type]) return;
-
-scrollContainer.innerHTML="";
-
-galleryImages[type].forEach(img=>{
-
-scrollContainer.innerHTML += `<img src="${img}">`;
-
-});
-
-scrollGallery.style.display="block";
-
-});
-
-});
-
-closeScroll.onclick=()=>{
-
-scrollGallery.style.display="none";
-
-};
