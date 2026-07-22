@@ -143,23 +143,6 @@ nav a:hover{
     object-fit:cover;
     border:8px solid #FFD700;
     box-shadow:0 0 40px rgba(255,215,0,.5);
-}
-
-}
-
-.hero-photo img{
-
-    width:350px;
-
-    height:350px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    border:8px solid #d4a017;
-
-    box-shadow:0 10px 35px rgba(0,0,0,.5);
 
 }
 /* =========================
