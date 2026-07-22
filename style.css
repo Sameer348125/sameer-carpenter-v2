@@ -1010,3 +1010,50 @@ body{
     border:6px solid #f7b500;
     box-shadow:0 0 40px rgba(247,181,0,.6);
 }
+/* ===== PREMIUM ANIMATION ===== */
+
+.hero-left{
+    animation:fadeLeft 1s ease;
+}
+
+.hero-right{
+    animation:fadeRight 1s ease;
+}
+
+@keyframes fadeLeft{
+    from{
+        opacity:0;
+        transform:translateX(-60px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeRight{
+    from{
+        opacity:0;
+        transform:translateX(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.hero-right img:hover{
+    transform:scale(1.05);
+    transition:.4s;
+}
+
+.logo{
+    color:#FFD700;
+    font-size:34px;
+    font-weight:700;
+}
+
+.header{
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(12px);
+}
