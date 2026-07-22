@@ -201,3 +201,64 @@ document.querySelectorAll("section").forEach(function(sec){
     observer.observe(sec);
 
 });
+// ==========================
+// FULL SCREEN GALLERY
+// ==========================
+
+const galleryImages = {
+    tv: [
+        "image/tv-panel-1.jpg",
+        "image/tv-panel-2.jpg",
+        "image/tv-panel-3.jpg",
+        "image/tv-panel-4.jpg"
+    ],
+    kitchen: [
+        "image/download.webp",
+        "image/download (1).webp"
+    ],
+    wardrobe: [
+        "image/images (12).jpeg",
+        "image/images (19).jpeg"
+    ],
+    door: [
+        "image/images (10).jpeg",
+        "image/images (11).jpeg"
+    ],
+    lcd: [
+        "image/photo1.jpg"
+    ],
+    furniture: [
+        "image/MODERN-LUXURY-SOFA-SET-FOR-LIVING-ROOM.jpg"
+    ]
+};
+
+const popup = document.getElementById("gallery");
+const galleryContainer = document.getElementById("galleryImages");
+const closeGallery = document.getElementById("closeGallery");
+
+document.querySelectorAll(".card").forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        const key = card.dataset.gallery;
+
+        galleryContainer.innerHTML = "";
+
+        galleryImages[key].forEach(img => {
+
+            galleryContainer.innerHTML += `<img src="${img}" alt="">`;
+
+        });
+
+        popup.style.display = "block";
+
+    });
+
+});
+
+closeGallery.onclick = function () {
+
+    popup.style.display = "none";
+    galleryContainer.innerHTML = "";
+
+};
