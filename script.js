@@ -294,12 +294,3 @@ const scrollGallery = document.getElementById("scrollGallery");
 const scrollContainer = document.getElementById("scrollContainer");
 const closeScroll = document.getElementById("closeScroll");
 
-const galleryImages = {
-tv:[
-"image/tv1.jpg",
-"image/tv2.jpg",
-"image/tv3.jpg",
-"image/tv4.jpg",
-"image/tv5.jpg"
-]
-};
