@@ -262,3 +262,28 @@ closeGallery.onclick = function () {
     galleryContainer.innerHTML = "";
 
 };
+// ===== AUTO GALLERY SLIDER =====
+
+const gallery = document.querySelector(".gallery-box");
+
+if(gallery){
+
+setInterval(()=>{
+
+gallery.scrollBy({
+left:320,
+behavior:"smooth"
+});
+
+if(gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth-10){
+
+gallery.scrollTo({
+left:0,
+behavior:"smooth"
+});
+
+}
+
+},3000);
+
+}
