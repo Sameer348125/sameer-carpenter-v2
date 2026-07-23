@@ -288,3 +288,28 @@ behavior:"smooth"
 
 }
 
+// ===== HERO BACKGROUND AUTO SLIDER =====
+
+const hero = document.querySelector(".hero");
+
+const banners = [
+    "image/banner1.webp",
+    "image/banner2.webp",
+    "image/banner3.webp",
+    "image/banner4.webp"
+];
+
+let bannerIndex = 0;
+
+setInterval(() => {
+
+    bannerIndex++;
+
+    if (bannerIndex >= banners.length) {
+        bannerIndex = 0;
+    }
+
+    hero.style.background =
+    `linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)), url('${banners[bannerIndex]}') center center/cover no-repeat`;
+
+}, 4000);
