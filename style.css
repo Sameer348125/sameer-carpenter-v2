@@ -934,7 +934,6 @@ body{
     background:#0d0d0d;
     color:#fff;
 }
-
 .header{
     position:fixed;
     top:0;
@@ -943,24 +942,39 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 50px;
-    background:rgba(0,0,0,.55);
-    backdrop-filter:blur(10px);
+    padding:12px 25px;
+    background:rgba(0,0,0,0.85);
+    backdrop-filter:blur(12px);
     z-index:999;
 }
 
 .logo{
-    font-size:32px;
+    font-size:26px;
     font-weight:700;
-    color:#f7b500;
+    color:#FFD700;
+}
+
+.header nav{
+    display:flex;
+    gap:18px;
 }
 
 .header nav a{
     color:#fff;
     text-decoration:none;
-    margin:0 15px;
-    font-size:18px;
+    font-size:16px;
+    font-weight:600;
 }
+
+.call-btn{
+    background:#FFD700;
+    color:#000;
+    padding:10px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
 
 .call-btn{
     background:#f7b500;
