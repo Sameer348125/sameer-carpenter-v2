@@ -1183,9 +1183,19 @@ body{
     justify-content:center;
     flex-wrap:wrap;
 }
+.hero-left{
+    width:100%;
+    order:1;
+}
+
+.hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
 
 .hero-right{
-    margin-top:30px;
+    order:3;
+    margin-top:80px;
 }
 
 .hero-right img{
