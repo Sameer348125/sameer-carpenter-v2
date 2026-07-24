@@ -313,3 +313,20 @@ setInterval(() => {
     `linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)), url('${banners[bannerIndex]}') center center/cover no-repeat`;
 
 }, 4000);
+// ===== HERO BACKGROUND SLIDER =====
+
+const banners = [
+  "image/banner1.webp",
+  "image/banner2.webp",
+  "image/banner3.webp",
+  "image/banner4.webp"
+];
+
+let bannerIndex = 0;
+const hero = document.querySelector(".hero");
+
+setInterval(() => {
+  bannerIndex = (bannerIndex + 1) % banners.length;
+  hero.style.backgroundImage =
+    `linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('${banners[bannerIndex]}')`;
+}, 4000);
