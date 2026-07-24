@@ -138,13 +138,20 @@ transition:background-image 1s ease;
 }
 
 .hero-right img{
-    width:340px;
-    height:340px;
+    width:380px;
+    height:380px;
     border-radius:50%;
     object-fit:cover;
     border:8px solid #FFD700;
-    box-shadow:0 0 40px rgba(255,215,0,.5);
+    box-shadow:
+        0 0 25px rgba(255,215,0,.7),
+        0 15px 40px rgba(0,0,0,.5);
+    transition:0.4s;
+}
 
+.hero-right img:hover{
+    transform:scale(1.05);
+}
 }
 /* =========================
 MAIN SLIDER
