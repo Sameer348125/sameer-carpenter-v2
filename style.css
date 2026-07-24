@@ -59,14 +59,17 @@ nav a:hover{
 }
 /* ===== PREMIUM HERO ===== */
 
-.hero{
+  .hero{
     position:relative;
     min-height:100vh;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:120px 8%;
-    
+    background-size:cover;
+    background-position:center;
+    transition:background-image 1s ease;
+}  
 }background-size:cover;
 background-position:center;
 transition:background-image 1s ease;
