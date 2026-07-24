@@ -1142,3 +1142,41 @@ body{
 .gallery-box img:hover{
     transform:scale(1.05);
 }
+@media (max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:120px 20px 50px;
+}
+
+.hero-left{
+    width:100%;
+}
+
+.hero-left h1{
+    font-size:42px;
+}
+
+.hero-left p{
+    font-size:20px;
+}
+
+.hero-left h3{
+    font-size:16px;
+}
+
+.hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.hero-right{
+    margin-top:30px;
+}
+
+.hero-right img{
+    width:250px;
+    height:250px;
+}
+}
