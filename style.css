@@ -66,9 +66,10 @@ nav a:hover{
     justify-content:space-between;
     align-items:center;
     padding:120px 8%;
-    background:url("image/banner.webp") center center/cover no-repeat;
-    overflow:hidden;
-}
+    
+}background-size:cover;
+background-position:center;
+transition:background-image 1s ease;
 
 .hero-overlay{
     position:absolute;
