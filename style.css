@@ -653,19 +653,11 @@ FLOATING BUTTONS
     background:#25D366;
 }
 
-/* =========================
-LOADER
-========================= */
 
 #loader{
-    position:fixed;
-    inset:0;
-    background:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:99999;
+    display:none;
 }
+
 
 .loader-circle{
     width:70px;
