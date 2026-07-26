@@ -69,15 +69,14 @@ transform:translateY(-3px);
 /* ===== HERO ===== */
 
 .hero{
-position:relative;
-height:60vh
-background:url("image/hero-bg.png") center center/cover no-repeat;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
+    position:relative;
+    height:60vh;
+    background:url("image/hero-bg.png") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
-
 .hero-overlay{
 position:absolute;
 top:0;
