@@ -989,7 +989,7 @@ body{
     align-items:center;
     justify-content:space-between;
     padding:120px 80px;
-    background:url("image/hero-bg.jpg") center/cover no-repeat;
+    background:#111
     position:relative;
 }
 
