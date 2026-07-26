@@ -235,3 +235,126 @@ box-shadow:0 8px 20px rgba(0,0,0,.18);
 .gallery-box img:hover{
 transform:scale(1.05);
 }
+/* ===== ABOUT ===== */
+
+.about{
+padding:80px 8%;
+background:#f8f8f8;
+text-align:center;
+}
+
+.about h2{
+font-size:42px;
+color:#d4a017;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#333;
+}
+
+/* ===== WHY CHOOSE US ===== */
+
+.why-us{
+padding:80px 8%;
+background:#fff;
+text-align:center;
+}
+
+.why-us h2{
+font-size:42px;
+color:#d4a017;
+margin-bottom:40px;
+}
+
+.why-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.why-card{
+background:#f8f8f8;
+padding:30px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+transition:.35s;
+}
+
+.why-card:hover{
+transform:translateY(-10px);
+}
+
+.why-card h3{
+font-size:24px;
+margin-bottom:15px;
+color:#222;
+}
+
+.why-card p{
+color:#555;
+line-height:1.6;
+}
+
+/* ===== COUNTER ===== */
+
+.counter{
+padding:80px 8%;
+background:#d4a017;
+text-align:center;
+}
+
+.counter h2{
+font-size:42px;
+color:#fff;
+margin-bottom:40px;
+}
+
+.counter-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.counter-card{
+background:#fff;
+padding:30px;
+border-radius:18px;
+}
+
+.counter-card h3{
+font-size:42px;
+color:#d4a017;
+margin-bottom:10px;
+}
+
+.counter-card p{
+color:#333;
+font-weight:600;
+}
+
+/* ===== REVIEWS ===== */
+
+.reviews{
+padding:80px 8%;
+background:#fff;
+text-align:center;
+}
+
+.reviews h2{
+font-size:42px;
+color:#d4a017;
+margin-bottom:40px;
+}
+
+.review-box{
+background:#f8f8f8;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
