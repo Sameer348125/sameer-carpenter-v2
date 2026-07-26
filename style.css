@@ -61,12 +61,11 @@ nav a:hover{
 
  .hero{
     height:70vh;
-    background:url("image/hero-bg.png") center top/cover no-repeat;
+    background:url("image/hero-bg.png") center top;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:relative;
 }
-
-}background-size:cover;
-background-position:center;
-transition:background-image 1s ease;
 
 .hero-overlay{
     position:absolute;
