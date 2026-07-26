@@ -58,18 +58,15 @@ nav a:hover{
     color:#d4a017;
 }
 /* ===== PREMIUM HERO ===== */
-.hero{
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 140px 8% 60px;
-    background-size: cover;
-    background-position: center;
-}
-  
+
+ .hero{
+    background:#111;
+    min-height:70vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:100px 8%;
+} 
 
 }background-size:cover;
 background-position:center;
