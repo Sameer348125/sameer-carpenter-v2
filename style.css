@@ -529,3 +529,16 @@ font-size:24px;
 }
 
 }
+@media (max-width:768px){
+
+.hero{
+    min-height: 50vh;
+    background-size: 100% auto;
+    background-position: center top;
+}
+
+.hero h1{
+    font-size: 48px;
+}
+
+}
