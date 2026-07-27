@@ -540,3 +540,12 @@ font-size:24px;
 }
 
 }
+@media (max-width:768px){
+
+.hero{
+    height:45vh;
+    background-size:cover;
+    background-position:center top;
+}
+
+}
