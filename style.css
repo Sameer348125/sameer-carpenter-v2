@@ -69,9 +69,11 @@ transform:translateY(-3px);
 
 .hero{
     position: relative;
-    height: 70vh;
+    height: 60vh;
     background: url("image/hero-bg.png") no-repeat center top;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color:#000;
     display: flex;
     justify-content: center;
     align-items: center;
