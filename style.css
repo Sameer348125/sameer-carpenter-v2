@@ -69,14 +69,13 @@ transform:translateY(-3px);
 
 .hero{
     position: relative;
-    height: 75vh;
+    height: 70vh;
     background: url("image/hero-bg.png") no-repeat center center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
 .hero-overlay{
