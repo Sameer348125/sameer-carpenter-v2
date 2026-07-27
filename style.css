@@ -97,18 +97,6 @@ color:#FFD700;
 margin-bottom:20px;
 }
 
-.hero p{
-font-size:26px;
-margin-bottom:20px;
-}
-
-.hero h3{
-font-size:22px;
-line-height:2;
-font-weight:400;
-margin-bottom:35px;
-}
-
 .hero-buttons{
 display:flex;
 justify-content:center;
