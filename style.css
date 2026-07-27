@@ -70,7 +70,7 @@ transform:translateY(-3px);
 .hero{
     position: relative;
     height: 70vh;
-    background: url("image/hero-bg.png") no-repeat center center;
+    background: url("image/hero-banner.png") no-repeat center top;
     background-size: cover;
     display:flex;
     justify-content:center;
