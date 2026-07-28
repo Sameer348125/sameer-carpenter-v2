@@ -66,18 +66,18 @@ transition:.3s;
 transform:translateY(-3px);
 }
 /* ===== HERO ===== */
-/* ===== HERO ===== */
-
 .hero{
     position: relative;
     height: 100vh;
-    background: url("image/hero-banner.png") no-repeat center center;
-    background-size: cover;
+    background: url("image/hero-banner.png") no-repeat center top;
+    background-size: contain;
+    background-color: #000;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     overflow: hidden;
 }
+
 
 .hero-overlay{
     position: absolute;
