@@ -69,13 +69,15 @@ transform:translateY(-3px);
 
 .hero{
     position: relative;
-    height: 70vh;
-    background: url("image/hero-banner.png") no-repeat center top;
-    background-size: cover;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+    height: 100vh;
+    background: url("image/hero-banner.png") center center no-repeat;
+    background-size: contain;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 
 .hero-overlay{
